@@ -1,0 +1,18 @@
+﻿<Window x:Class="TensorFlowNET_Keras.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TensorFlowNET_Keras"
+        mc:Ignorable="d"
+        Title="Image Analysis" Height="470" Width="480">
+    <Grid>
+        <Button Content="Test NN" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
+        <Button Content="Choose Picture" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_1"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="410" Margin="145,10,0,0" VerticalAlignment="Top" Width="321"/>
+        <Label x:Name="digitText" Visibility="Hidden" Content="Your Digit is a:" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="number" Content="" HorizontalAlignment="Left" FontSize="45" Margin="10,122,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="certainty" Visibility="Visible" Content="" HorizontalAlignment="Left" Margin="10,239,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
